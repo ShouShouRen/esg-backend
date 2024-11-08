@@ -15,7 +15,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
   username: configService.get<string>('MYSQL_USER'),
   password: configService.get<string>('MYSQL_PASSWORD'),
   database: configService.get<string>('MYSQL_DATABASE'),
-  entities: [__dirname + '/../**/*.entity.{js,ts}'],
+  entities: [__dirname + '/../dist/**/*.entity.js'],
   autoLoadEntities: true,
   synchronize: true,
 };
